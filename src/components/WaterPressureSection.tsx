@@ -1,46 +1,51 @@
-"use client";
+import Link from "next/link";
 
-import { Button } from "antd";
+const cards = [
+  {
+    image: "/images/New Villa Owners.png",
+    title: "New Villa Owners",
+    description: "A pump that grows with your family.",
+  },
+  {
+    image: "/images/Home Renovators.png",
+    title: "Home Renovators",
+    description: "Breathe new life into your home.",
+  },
+  {
+    image: "/images/Smart Home Enthusiasts.png",
+    title: "Smart Home Enthusiasts",
+    description: "Upgrade to an intelligent pump.",
+  },
+];
 
 export default function WaterPressureSection() {
   return (
-    <section className="relative overflow-hidden">
-      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[500px]">
-        {/* Image Side */}
-        <div className="relative aspect-square lg:aspect-auto bg-gray-800">
-          <img
-            src="/images/water-pressure.jpg"
-            alt="Constant Water Pressure - Shower head"
-            className="w-full h-full object-cover"
-            onError={(e) => {
-              (e.target as HTMLImageElement).style.display = "none";
-            }}
-          />
-        </div>
-
-        {/* Content Side */}
-        <div className="bg-[#1a1a2e] flex items-center px-8 lg:px-16 py-16">
-          <div className="space-y-6">
-            <p className="text-sm text-[#0068b4] font-semibold uppercase tracking-wide">
-              Grundfos SCALA2
+    <section className="w-full bg-white pt-16 pb-10 px-6 md:pt-24 md:pb-14 md:px-10 lg:pt-35 lg:pb-20 lg:px-30.5">
+      <h2 className="font-(family-name:--font-grundfos-sans-extd) font-bold text-[#11497B] text-2xl md:text-[28px] lg:text-[32px] leading-none tracking-normal mb-6 md:mb-8 lg:mb-10">
+        Find your path to a better home
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        {cards.map((card) => (
+          <div key={card.title} className="flex flex-col gap-3.5">
+            <img
+              src={card.image}
+              alt={card.title}
+              className="w-full h-auto object-cover"
+            />
+            <h3 className="font-bold text-[#121212] text-xl md:text-[22px] lg:text-[24px] leading-none tracking-normal">
+              {card.title}
+            </h3>
+            <p className="text-[#121212] text-base md:text-lg lg:text-[20px] font-normal leading-tight tracking-normal">
+              {card.description}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-              Constant Water Pressure
-            </h2>
-            <p className="text-base text-gray-300 leading-relaxed">
-              Enjoy constant water pressure throughout your home. The Grundfos
-              SCALA2 automatically adjusts its performance based on your
-              household water demand, ensuring consistent pressure at every tap.
-            </p>
-            <Button
-              type="primary"
-              size="large"
-              className="px-8 h-12 text-base font-semibold rounded"
+            <Link
+              href="#"
+              className="inline-flex items-center justify-center gap-2.5 w-46 h-11.75 py-3.25 bg-[#126AF3] text-white text-base font-normal leading-none rounded-sm no-underline hover:bg-[#0d5acc] transition-colors"
             >
-              Discover more
-            </Button>
+              Learn more
+            </Link>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );
