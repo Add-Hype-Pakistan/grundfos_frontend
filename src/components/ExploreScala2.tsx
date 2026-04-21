@@ -107,6 +107,7 @@ export default function ExploreScala2() {
             style={{ left: `${spot.x}%`, top: `${spot.y}%` }}
             className="absolute z-20 -translate-x-1/2 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 rounded-full cursor-pointer hover:scale-110 transition-transform"
           >
+            
             <Image
               src={spot.icon}
               alt=""
