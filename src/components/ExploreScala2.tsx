@@ -111,7 +111,7 @@ export default function ExploreScala2() {
               src={spot.icon}
               alt=""
               width={40}
-              height={40}
+              height={40} //height
               className="w-full h-full"
             />
           </button>
