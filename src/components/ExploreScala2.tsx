@@ -7,8 +7,8 @@ const hotspots = [
   {
     id: 1,
     x: 65,
-    y: 40.5,
-    targetX: 53,
+    y: 29.5,
+    targetX: 52.5,
     icon: "/images/1.svg",
     label: "Constant Water Pressure",
     description:
@@ -17,7 +17,7 @@ const hotspots = [
   {
     id: 2,
     x: 18,
-    y: 51,
+    y: 41,
     targetX: 28,
     icon: "/images/2.svg",
     label: "Quiet operation",
@@ -27,8 +27,8 @@ const hotspots = [
   {
     id: 3,
     x: 67,
-    y: 59,
-    targetX: 55,
+    y: 50,
+    targetX: 55.5,
     icon: "/images/3.svg",
     label: "Upto 8 Taps",
     description:
@@ -37,8 +37,8 @@ const hotspots = [
   {
     id: 4,
     x: 54,
-    y: 87,
-    targetX: 41,
+    y: 73,
+    targetX: 44,
     icon: "/images/4.svg",
     label: "Energy Efficient",
     description: "SCALA2 automatically adjusts its power to match your home's water use, reducing energy waste while keeping water pressure steady and efficient.",
@@ -56,7 +56,7 @@ export default function ExploreScala2() {
         playsInline
         className="block w-full h-auto"
       >
-        <source src="/images/Explore SCALA2.mp4" type="video/mp4" />
+        <source src="/images/illustrated%20ellivation_Main_3.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-black/20 pointer-events-none" />
 
