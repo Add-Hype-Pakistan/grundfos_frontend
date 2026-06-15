@@ -10,6 +10,10 @@ import WaterPressureSection from "@/components/WaterPressureSection";
 import ContentGrid from "@/components/ContentGrid";
 import CareerSection from "@/components/CareerSection";
 import ReadyToBuy from "@/components/ReadyToBuy";
+import WarrantySection from "@/components/WarrantySection";
+import InteractiveVillaExperience from "@/components/InteractiveVillaExperience";
+import ChooseHomeJourney from "@/components/ChooseHomeJourney";
+import PumpProblems from "@/components/PumpProblems";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -17,18 +21,19 @@ export default function Home() {
     <>
       <Navbar />
       <main>
+        {/* Sections render top-to-bottom in this order. Move a line to reorder; */}
+        {/* wrap a line in a JSX comment to hide it (see commented sections below). */}
         <HeroSection />
-        <ProductCategories />
+        <PumpProblems />
           <GrundfosScala2Section />
-         <SliderSection />
-        {/* <WorldEnvironmentDay /> */}
-           <ExploreScala2 />
-            <WaterPressureSection />
-        <Scala2Section />
-      
-        {/* <ContentGrid /> */}
-        {/* <CareerSection /> */}
-        <ReadyToBuy />
+           <ChooseHomeJourney />
+                 <ExploreScala2 />
+ <InteractiveVillaExperience />
+
+
+       
+       
+        <WarrantySection />
       </main>
       <Footer />
     </>
