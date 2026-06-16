@@ -28,11 +28,13 @@ const tabs = [
       image: "/images/sound-left.png",
       caption: "Traditional Pump: Loud and distracting",
       audio: "/images/water-pump-running-01.mp3",
+      volume: 1,
     },
     scala2: {
       image: "/images/sound-right.png",
       caption: "SCALA2: Silent and integrated into the lifestyle",
       audio: "/images/water-pump-running-01.mp3",
+      volume: 0.5,
     },
   },
   {
@@ -64,17 +66,18 @@ export default function Scala2PumpComparison() {
     setPlaying(null);
   };
 
-  const toggleAudio = (src: string) => {
-    if (playing === src) {
+  const toggleAudio = (key: string, src: string, volume = 1) => {
+    if (playing === key) {
       stopAudio();
       return;
     }
     audioRef.current?.pause();
     const audio = new Audio(src);
+    audio.volume = volume;
     audio.onended = () => setPlaying(null);
     audioRef.current = audio;
     audio.play();
-    setPlaying(src);
+    setPlaying(key);
   };
 
   const selectTab = (i: number) => {
@@ -150,13 +153,15 @@ export default function Scala2PumpComparison() {
               {panel.audio && (
                 <button
                   type="button"
-                  onClick={() => toggleAudio(panel.audio!)}
+                  onClick={() =>
+                    toggleAudio(panel.caption, panel.audio!, panel.volume ?? 1)
+                  }
                   className="absolute inset-0 flex items-center justify-center group"
                   aria-label={`Play ${panel.caption}`}
                 >
                   <div className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/40 group-hover:bg-white/35 transition-colors">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-                      {playing === panel.audio ? (
+                      {playing === panel.caption ? (
                         <path d="M6 5h4v14H6zM14 5h4v14h-4z" />
                       ) : (
                         <path className="translate-x-px" d="M8 5v14l11-7z" />
