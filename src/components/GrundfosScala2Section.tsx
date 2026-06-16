@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function GrundfosScala2Section() {
   return (
     <section className="relative w-full h-80 md:h-120 lg:h-153 overflow-hidden">
@@ -23,12 +21,13 @@ export default function GrundfosScala2Section() {
         <p className="text-white text-sm md:text-base lg:text-[24px] font-normal leading-normal tracking-normal">
           Modern homes need a smarter water solution not just another pump
         </p>
-        <Link
-          href="#"
+        <a
+          href="/files/Grundfos_SCALA2_Brochure_Option_B.pdf"
+          download
           className="inline-block w-fit text-white text-base lg:text-[24px] font-normal leading-normal tracking-normal underline underline-offset-4 hover:opacity-80 transition-opacity"
         >
           Get the Guide
-        </Link>
+        </a>
       </div>
     </section>
   );

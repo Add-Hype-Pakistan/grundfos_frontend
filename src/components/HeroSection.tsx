@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import VideoLightbox from "@/components/VideoLightbox";
 
 export default function HeroSection() {
@@ -34,12 +33,13 @@ export default function HeroSection() {
           energy waste
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4 md:gap-6">
-          <Link
-            href="#"
+          <a
+            href="/files/Grundfos_SCALA2_Brochure.pdf"
+            download
             className="inline-flex items-center justify-center px-6 h-11.75 py-3.25 border border-white text-white text-base font-normal leading-none tracking-normal rounded-sm no-underline hover:bg-white hover:text-[#11497B] transition-colors"
           >
             Discover Your Solution
-          </Link>
+          </a>
           <button
             type="button"
             onClick={() => setVideoOpen(true)}

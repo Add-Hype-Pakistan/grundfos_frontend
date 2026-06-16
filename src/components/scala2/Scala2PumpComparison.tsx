@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef, useState } from "react";
-import Link from "next/link";
 
 const tabs = [
   {
@@ -181,12 +180,13 @@ export default function Scala2PumpComparison() {
             </span>
           </div>
           <div className="mt-4 flex justify-center lg:mt-0 lg:absolute lg:inset-0 lg:items-center lg:pointer-events-none">
-            <Link
-              href="#"
+            <a
+              href="/files/Grundfos_SCALA2_Brochure_Option_B.pdf"
+              download
               className="inline-flex items-center justify-center gap-[7.72px] px-5 py-2.5 bg-[#126AF3] text-white text-xs md:text-sm font-normal leading-normal rounded-[3.09px] no-underline hover:bg-[#0d5acc] transition-colors lg:pointer-events-auto"
             >
               Download the technical Guide
-            </Link>
+            </a>
           </div>
         </div>
       </div>
