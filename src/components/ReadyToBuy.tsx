@@ -1,6 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
+import ConsultationFormModal from "@/components/ConsultationFormModal";
 
 export default function ReadyToBuy() {
+  const [formOpen, setFormOpen] = useState(false);
+
   return (
     <section className="relative w-full h-auto md:h-154.25 overflow-hidden">
       {/* Background Image */}
@@ -21,13 +27,24 @@ export default function ReadyToBuy() {
         <p className="text-white text-base md:text-xl lg:text-2xl font-normal leading-normal tracking-normal max-w-lg mb-5">
           Your comfort is our priority. That is why every SCALA2 comes with a 2-year warranty, giving you total peace of mind from day one.
         </p>
-        <Link
-          href="#"
-          className="inline-flex items-center justify-center w-46 h-11.75 py-3.25 bg-white text-[#126AF3] text-base font-normal leading-none tracking-normal rounded-sm no-underline hover:bg-gray-100 transition-colors"
-        >
-          Learn more
-        </Link>
+        <div className="flex flex-wrap items-center gap-4 md:gap-6">
+          <Link
+            href="tel:+97110000001"
+            className="inline-flex items-center justify-center px-6 h-11.75 py-3.25 bg-white text-[#126AF3] text-base font-normal leading-none tracking-normal rounded-sm no-underline hover:bg-gray-100 transition-colors"
+          >
+            Find a dealer near you
+          </Link>
+          <button
+            type="button"
+            onClick={() => setFormOpen(true)}
+            className="inline-flex items-center justify-center text-white text-base font-normal leading-none tracking-normal hover:opacity-80 transition-opacity"
+          >
+            Book Home Consultation
+          </button>
+        </div>
       </div>
+
+      <ConsultationFormModal open={formOpen} onClose={() => setFormOpen(false)} />
     </section>
   );
 }
