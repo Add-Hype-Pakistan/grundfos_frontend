@@ -34,7 +34,7 @@ const tabs = [
       image: "/images/sound-right.png",
       caption: "SCALA2: Silent and integrated into the lifestyle",
       audio: "/images/water-pump-running-01.mp3",
-      volume: 0.5,
+      volume: 0.1,
     },
   },
   {
