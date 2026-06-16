@@ -7,9 +7,9 @@ type Props = {
   onClose: () => void;
 };
 
-// Set this to your deployed Google Apps Script Web App URL.
-// Add NEXT_PUBLIC_CONSULTATION_ENDPOINT to .env.local (see setup notes).
-const ENDPOINT = process.env.NEXT_PUBLIC_CONSULTATION_ENDPOINT ?? "";
+// Deployed Google Apps Script Web App URL (appends submissions to the sheet).
+const ENDPOINT =
+  "https://script.google.com/macros/s/AKfycbzQ8l_ypjsPyM-xDxI0bybeZgPw2audovFGhCH98bICYrzgyC71qoiE5aeHtoht5034/exec";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
