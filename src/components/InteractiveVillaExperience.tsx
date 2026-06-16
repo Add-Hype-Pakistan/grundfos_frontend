@@ -51,7 +51,7 @@ export default function InteractiveVillaExperience() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center px-6 py-16 md:px-10 md:py-20 lg:px-16 lg:py-24">
         <h2 className="font-(family-name:--font-grundfos-sans-extd) font-bold text-white text-center text-3xl md:text-4xl lg:text-5xl leading-none tracking-normal mb-10 md:mb-14 lg:mb-16">
-          Interactive Villa Experience
+          Walk Through A Villa. See Where Pressure Dies.
         </h2>
         <div className="relative w-full max-w-[800px] aspect-[4/3]">
           {/* ── Images (peers drive their own label) ── */}

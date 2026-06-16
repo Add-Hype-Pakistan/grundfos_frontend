@@ -23,13 +23,12 @@ export default function PumpProblems() {
   return (
     <section className="w-full bg-white px-10 py-16 md:px-12 md:py-20 lg:px-16.25 lg:py-28.5">
       <h2 className="font-(family-name:--font-grundfos-sans-extd) font-bold text-[#092844] text-center text-2xl md:text-3xl lg:text-[33.47px] leading-normal tracking-normal max-w-4xl lg:max-w-none lg:whitespace-nowrap mx-auto">
-        Most Homeowners Don&rsquo;t Upgrade Their Pump &mdash; Until{" "}
-        <br className="hidden lg:block" />
-        It Becomes a Daily Problem
+        Three Ways Your Pump Is Sailing You
       </h2>
-      <p className="mt-5 text-center text-[#092844] text-base md:text-lg lg:text-[20.92px] font-normal leading-normal tracking-normal max-w-3xl lg:max-w-none lg:whitespace-nowrap mx-auto">
-        In fact, most people replace their pump for the same 3 reasons &mdash;
-        issues that affect comfort every single day
+      <p className="mt-5 text-center text-[#092844] text-base md:text-lg lg:text-[20.92px] font-normal leading-normal tracking-normal max-w-3xl mx-auto">
+        Noise that grinds through your walls. Bills that climb when nothing&rsquo;s
+        changed. Pressure that dies the moment a second tap opens. Most UAE villa
+        owners live with all three. Until they don&rsquo;t.
       </p>
 
       <div className="mt-12 md:mt-14 lg:mt-16 grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12 md:gap-8 pb-16">
