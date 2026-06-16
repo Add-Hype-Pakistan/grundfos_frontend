@@ -1,6 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
+import VideoLightbox from "@/components/VideoLightbox";
 
 export default function HeroSection() {
+  const [videoOpen, setVideoOpen] = useState(false);
+
   return (
     <section className="relative w-full h-screen min-h-100 md:min-h-150 max-h-225 overflow-hidden">
       {/* Background Video */}
@@ -34,14 +40,25 @@ export default function HeroSection() {
           >
             Discover Your Solution
           </Link>
-          <Link
-            href="#"
-            className="inline-flex items-center justify-center text-white text-base font-normal leading-none tracking-normal no-underline hover:opacity-80 transition-opacity"
+          <button
+            type="button"
+            onClick={() => setVideoOpen(true)}
+            className="inline-flex items-center justify-center gap-2 text-white text-base font-normal leading-none tracking-normal hover:opacity-80 transition-opacity"
           >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z" />
+            </svg>
             Watch SCALA2 in Action
-          </Link>
+          </button>
         </div>
       </div>
+
+      {/* Video Lightbox */}
+      <VideoLightbox
+        open={videoOpen}
+        onClose={() => setVideoOpen(false)}
+        src="/images/thid section bg.mp4"
+      />
     </section>
   );
 }
