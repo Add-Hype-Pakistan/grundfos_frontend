@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const cards = [
   {
     image: "/images/Choose-The-Home-Journey-1.png",
@@ -7,7 +5,7 @@ const cards = [
     title: "Start with the right water pressure from day one",
     description: "Avoid weak showers and pressure issues after moving in",
     linkText: "See Your Move-in Checklist",
-    href: "#",
+    href: "/files/Grundfos_SCALA2_Brochure.pdf",
   },
   {
     image: "/images/Choose-The-Home-Journey-2.png",
@@ -16,7 +14,7 @@ const cards = [
       "Water Pressure. Right From the Start or Why Water Pressure Should Never Be an Afterthought",
     description: "Plan your water system before renovation starts",
     linkText: "Get the Planning Guide",
-    href: "#",
+    href: "/files/Grundfos_SCALA2_Technical_Brochure_1.pdf",
   },
   {
     image: "/images/Choose-The-Home-Journey-3.png",
@@ -25,7 +23,7 @@ const cards = [
     description:
       "Smart control, steady pressure, and energy savings—without complexity",
     linkText: "Upgrade Your Water System",
-    href: "#",
+    href: "/files/Grundfos_SCALA2_Technical_Brochure_Option_B.pdf",
   },
 ];
 
@@ -58,12 +56,13 @@ export default function ChooseHomeJourney() {
             <p className="mt-3 text-[#092844] text-[15px] font-normal leading-[0.99] tracking-normal">
               {card.description}
             </p>
-            <Link
+            <a
               href={card.href}
+              download
               className="mt-4 inline-block w-fit text-[#092844] text-[15px] font-normal underline underline-offset-4 hover:opacity-70 transition-opacity"
             >
               {card.linkText}
-            </Link>
+            </a>
           </div>
         ))}
       </div>
