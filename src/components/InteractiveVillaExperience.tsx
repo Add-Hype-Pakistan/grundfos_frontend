@@ -88,7 +88,7 @@ export default function InteractiveVillaExperience() {
             <div
               key={label.id}
               style={{ left: `${label.x}%`, top: `${label.y}%` }}
-              className={`pointer-events-none absolute z-40 flex flex-col w-40 md:w-44 ${label.items} ${label.align} opacity-0 ${label.reveal} transition-opacity duration-300`}
+              className={`pointer-events-none absolute z-40 hidden xl:flex flex-col w-40 md:w-44 ${label.items} ${label.align} opacity-0 ${label.reveal} transition-opacity duration-300`}
             >
               <h3 className="text-white font-bold text-sm md:text-base leading-tight">
                 {label.title}

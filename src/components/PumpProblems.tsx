@@ -7,7 +7,7 @@ const problems = [
   },
   {
     image: "/images/domestic_pump.png",
-    title: "Too Noisy Pump",
+    title: "Too Noisy\nPump",
     description: "Background noise that disrupts your comfort day and night.",
   },
   {
@@ -31,18 +31,18 @@ export default function PumpProblems() {
         owners live with all three. Until they don&rsquo;t.
       </p>
 
-      <div className="mt-12 md:mt-14 lg:mt-16 grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12 md:gap-8 pb-16">
+      <div className="mt-12 md:mt-14 lg:mt-16 grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-12 lg:gap-8 pb-16">
         {problems.map((problem) => (
           <div key={problem.title} className="group relative w-full">
             <div className="overflow-hidden">
               <img
                 src={problem.image}
                 alt={problem.title}
-                className="w-full aspect-418/506 object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                className="w-full aspect-418/506 max-h-125 lg:max-h-none object-cover transition-transform duration-500 ease-out group-hover:scale-105"
               />
             </div>
-            <div className="absolute left-1/2 -translate-x-1/2 -bottom-6 lg:-bottom-16 w-66 max-w-[calc(100%-2rem)] min-h-36 flex flex-col justify-between bg-black/80 rounded-sm p-4">
-              <h3 className="font-(family-name:--font-grundfos-sans-extd) font-bold text-white text-lg md:text-[21.46px] leading-normal tracking-normal">
+            <div className="absolute left-1/2 -translate-x-1/2 -bottom-6 lg:-bottom-16 w-72 max-w-[calc(100%-2rem)] min-h-36 lg:h-48 flex flex-col justify-between bg-black/80 rounded-sm p-4">
+              <h3 className="font-(family-name:--font-grundfos-sans-extd) font-bold text-white text-lg md:text-[21.46px] leading-normal tracking-normal whitespace-pre-line">
                 {problem.title}
               </h3>
               <p className="text-white text-xs md:text-[13.41px] font-normal leading-normal tracking-normal">
@@ -57,9 +57,9 @@ export default function PumpProblems() {
         <a
           href="/files/SCALA2_Why_Water_Pressure_Drops_Quick_Guide_v5_1.pdf"
           download
-          className="inline-flex items-center justify-center gap-[8.75px] w-[236.39px] h-[42.76px] py-[11.38px] bg-[#126AF3] text-white text-[15.17px] font-normal leading-normal tracking-normal rounded-[3.5px] no-underline hover:bg-[#0d5acc] transition-colors"
+          className="inline-flex items-center justify-center gap-[8.75px] h-[42.76px] px-6 py-[11.38px] bg-[#126AF3] text-white text-[15.17px] font-normal leading-normal tracking-normal rounded-[3.5px] no-underline hover:bg-[#0d5acc] transition-colors"
         >
-          Why Water Pressure Drops
+          Find the Cause of Your Water Pressure Drop
         </a>
       </div>
     </section>
