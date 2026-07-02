@@ -26,7 +26,7 @@ export default function GrundfosScala2Section() {
           download
           className="inline-block w-fit text-white text-base lg:text-[24px] font-normal leading-normal tracking-normal underline underline-offset-4 hover:opacity-80 transition-opacity"
         >
-          Get the Guide
+          Watch SCALA2 in Action
         </a>
       </div>
     </section>

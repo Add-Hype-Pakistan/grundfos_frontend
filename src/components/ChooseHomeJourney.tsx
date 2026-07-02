@@ -4,7 +4,7 @@ const cards = [
     tag: "New Villa Owner",
     title: "Start with the right water pressure from day one",
     description: "Avoid weak showers and pressure issues after moving in",
-    linkText: "See Your Move-in Checklist",
+    linkText: "Download the New Villa Move-In Checklist",
     href: "/files/Grundfos_Guide_1_New_Villa_Move_In_Checklist.pdf",
   },
   {
@@ -13,16 +13,16 @@ const cards = [
     title:
       "Water Pressure. Right From the Start or Why Water Pressure Should Never Be an Afterthought",
     description: "Plan your water system before renovation starts",
-    linkText: "Get the Planning Guide",
+    linkText: "Download the Renovation Planning Guide",
     href: "/files/Grundfos_Guide_2_Villa_Renovation_Planning_Guide.pdf",
   },
   {
     image: "/images/Choose-The-Home-Journey-3.png",
-    tag: "Smart Home Enthusiasts",
+    tag: "Smart Home",
     title: "Upgrade to a Smarter Water System",
     description:
       "Smart control, steady pressure, and energy savings—without complexity",
-    linkText: "Upgrade Your Water System",
+    linkText: "Download the Smart Home Upgrade Guide",
     href: "/files/Grundfos_Guide_3_Smart_Home_Upgrade_Guide.pdf",
   },
 ];

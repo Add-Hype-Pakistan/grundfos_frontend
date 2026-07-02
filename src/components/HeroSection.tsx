@@ -38,7 +38,7 @@ export default function HeroSection() {
             download
             className="inline-flex items-center justify-center px-6 h-11.75 py-3.25 border border-white text-white text-base font-normal leading-none tracking-normal rounded-sm no-underline hover:bg-white hover:text-[#11497B] transition-colors"
           >
-            Discover Your Solution
+            Discover How SCALA2 Works
           </a>
           <button
             type="button"

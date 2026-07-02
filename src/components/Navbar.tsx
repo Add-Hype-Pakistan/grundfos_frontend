@@ -9,6 +9,7 @@ import { useState } from "react";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Why SCALA2", href: "/scala2" },
+  { label: "Customer Support", href: "/customer-support" },
 ];
 
 export default function Navbar() {
