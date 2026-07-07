@@ -60,7 +60,7 @@ export default function Scala2Testimonial() {
       <VideoLightbox
         open={videoOpen}
         onClose={() => setVideoOpen(false)}
-        src="/images/thid section bg.mp4"
+        src="/images/Scala2_Website_video.mp4"
       />
     </section>
   );
