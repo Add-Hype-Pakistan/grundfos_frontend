@@ -3,15 +3,15 @@
 import { useState } from "react";
 
 const tabs = [
-  {
-    id: "contact",
-    label: "Contact support",
-    heading: "Still need help? We'll connect you to the right team",
-    subtext: "Get help with your pump",
-    groupLabel: "Question type",
-    chips: ["Product selection", "Comparison", "Pre-purchase"],
-    submitLabel: "Submit",
-  },
+  // {
+  //   id: "contact",
+  //   label: "Contact support",
+  //   heading: "Still need help? We'll connect you to the right team",
+  //   subtext: "Get help with your pump",
+  //   groupLabel: "Question type",
+  //   chips: ["Product selection", "Comparison", "Pre-purchase"],
+  //   submitLabel: "Submit",
+  // },
   {
     id: "installation",
     label: "Installation support",
@@ -56,7 +56,7 @@ export default function InstallationSupport() {
   };
 
   return (
-    <section className="w-full bg-white px-6 py-16 md:px-10 md:py-20 lg:px-16 lg:py-24">
+    <section id="installation-support" className="w-full scroll-mt-24 bg-white px-6 py-16 md:px-10 md:py-20 lg:px-16 lg:py-24">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
         {/* Left column */}
         <div>
@@ -66,10 +66,14 @@ export default function InstallationSupport() {
           <p className="text-[#171717] text-base md:text-lg lg:text-[20px] font-normal leading-snug mb-5">
             Get step-by-step guidance for installing and setting up your SCALA2
           </p>
-          <p className="text-[#171717] text-base md:text-lg font-normal leading-snug mb-3">
-            How to install SCALA2 (link to the How-to install SCALA2 guide)
-          </p>
-          <p className="text-[#171717] text-base md:text-lg font-normal leading-snug mb-6">
+          <a
+            href="/files/how-to-install-scala2.pdf"
+            download
+            className="inline-block text-[#126AF3] text-base md:text-lg font-normal leading-snug mb-3 underline hover:text-[#0d5acc] transition-colors"
+          >
+            How to install SCALA2
+          </a>
+          {/* <p className="text-[#171717] text-base md:text-lg font-normal leading-snug mb-6">
             How To Set
           </p>
           <a
@@ -77,7 +81,7 @@ export default function InstallationSupport() {
             className="inline-flex items-center justify-center px-6 h-11.75 bg-[#126AF3] text-white text-base font-normal leading-none rounded-sm no-underline hover:bg-[#0d5acc] transition-colors"
           >
             Talk to an expert
-          </a>
+          </a> */}
         </div>
 
         {/* Right column — tabbed form */}
@@ -89,7 +93,7 @@ export default function InstallationSupport() {
                 key={t.id}
                 type="button"
                 onClick={() => selectTab(i)}
-                className={`flex items-center justify-center text-center w-[96.5px] h-[31px] rounded-[3.77px] text-[10.33px] leading-[0.78] border transition-colors ${
+                className={`flex items-center justify-center text-center w-27 h-[31px] rounded-[3.77px] text-[10.33px] leading-[0.78] border transition-colors ${
                   i === active
                     ? "bg-[#126AF3] text-[#FFF9F9] border-[#126AF3]"
                     : "bg-white text-[#9E9E9E] border-gray-300 hover:border-[#126AF3]"
@@ -120,10 +124,10 @@ export default function InstallationSupport() {
               <label className={labelClass}>Email</label>
               <input type="email" placeholder="Name@gmail.com" className={fieldClass} />
             </div>
-            <div>
+            {/* <div>
               <label className={labelClass}>Country</label>
               <input type="text" placeholder="Enter Country" className={fieldClass} />
-            </div>
+            </div> */}
 
             <div>
               {tab.groupLabel && <label className={labelClass}>{tab.groupLabel}</label>}

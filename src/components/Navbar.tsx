@@ -37,17 +37,17 @@ export default function Navbar() {
         {/* Right side links - desktop */}
         <div className="hidden md:flex items-center gap-6 lg:gap-10">
           <Link
-            href="tel:+97148815166"
+            href="/customer-support#installation-support"
             className="no-underline text-white text-sm lg:text-[17px] font-normal"
           >
             Talk to an Expert
           </Link>
-          <Link
+          {/* <Link
             href="tel:+97148815166"
             className="no-underline text-white text-sm lg:text-[17px] font-normal"
           >
             Find a Dealer
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile menu button */}
