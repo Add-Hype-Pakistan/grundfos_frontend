@@ -6,12 +6,12 @@ const problems = [
       "When multiple taps are used at the same time, water pressure can become inconsistent throughout your home.",
   },
   {
-    image: "/images/domestic_pump.png",
-    title: "Too Noisy\nPump",
+    image: "/images/domestic_pump.jpeg",
+    title: "Pump\nToo Noisy",
     description: "Background noise that disrupts your comfort day and night.",
   },
   {
-    image: "/images/High%20Energy%20Consumption.png",
+    image: "/images/High%20Energy%20Consumption.jpeg",
     title: "High Energy Consumption",
     description: "Runs at maximum energy leading to high electricity costs",
   },

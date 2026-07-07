@@ -10,7 +10,7 @@ const tabs = [
     description:
       "Using traditional pumps leads to water pressure dropping when more taps are opened, whereas if you are using Grundfos SCALA2, the water pressure stays constant",
     traditional: {
-      image: "/images/water-pressure-left.png",
+      image: "/images/water-pressure-left.jpeg",
       caption: "Traditional Pump: Water pressure drops",
     },
     scala2: {
