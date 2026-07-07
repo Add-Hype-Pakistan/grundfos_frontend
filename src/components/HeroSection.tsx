@@ -33,13 +33,13 @@ export default function HeroSection() {
           comfortable.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4 md:gap-6">
-          <a
+          {/* <a
             href="/files/Grundfos_SCALA2_Brochure.pdf"
             download
             className="inline-flex items-center justify-center px-6 h-11.75 py-3.25 border border-white text-white text-base font-normal leading-none tracking-normal rounded-sm no-underline hover:bg-white hover:text-[#11497B] transition-colors"
           >
             Discover How SCALA2 Works
-          </a>
+          </a> */}
           <button
             type="button"
             onClick={() => setVideoOpen(true)}

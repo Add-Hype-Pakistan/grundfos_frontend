@@ -57,7 +57,7 @@ export default function PumpProblems() {
         <a
           href="/files/SCALA2_Why_Water_Pressure_Drops_Quick_Guide_v5_1.pdf"
           download
-          className="inline-flex items-center justify-center gap-[8.75px] h-[42.76px] px-6 py-[11.38px] bg-[#126AF3] text-white text-[15.17px] font-normal leading-normal tracking-normal rounded-[3.5px] no-underline hover:bg-[#0d5acc] transition-colors"
+          className="inline-flex items-center justify-center gap-[8.75px] h-11.75 py-3.25 px-6 bg-[#126AF3] text-white text-base font-normal leading-normal tracking-normal rounded-[3.5px] no-underline hover:bg-[#0d5acc] transition-colors"
         >
           Find the Cause of Your Water Pressure Drop
         </a>
