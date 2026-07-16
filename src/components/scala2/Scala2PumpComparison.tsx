@@ -33,8 +33,8 @@ const tabs = [
     scala2: {
       image: "/images/sound-right.png",
       caption: "SCALA2: Silent and integrated into the lifestyle",
-      audio: "/images/water-pump-running-01.mp3",
-      volume: 0.1,
+      audio: "/images/Scala_2_Motor.mp3",
+      volume: 1,
     },
   },
   {
@@ -189,7 +189,7 @@ export default function Scala2PumpComparison() {
         {/* Download button — own row below captions */}
         <div className="mt-6 flex justify-center">
           <a
-            href="/files/Grundfos_SCALA2_Traditional_vs_Smart_Pump_Comparison.pdf"
+            href="/files/Grundfos_SCALA2_vs_Traditional_Pump_Option_B.pdf"
             download
             className="inline-flex items-center justify-center gap-[7.72px] px-5 py-2.5 h-11.75 bg-[#126AF3] text-white text-xs md:text-sm font-normal leading-normal rounded-[3.09px] no-underline hover:bg-[#0d5acc] transition-colors"
           >
