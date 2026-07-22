@@ -36,7 +36,7 @@ export default function Scala2Testimonial() {
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4 md:gap-6">
-          <button
+          {/* <button
             type="button"
             onClick={() => setVideoOpen(true)}
             className="inline-flex items-center justify-center gap-2 px-6 h-11.75 py-3.25 border border-white text-white text-base font-normal leading-none tracking-normal rounded-sm hover:bg-white hover:text-[#11497B] transition-colors"
@@ -45,12 +45,12 @@ export default function Scala2Testimonial() {
               <path d="M8 5v14l11-7z" />
             </svg>
             Watch SCALA2 in Action
-          </button>
+          </button> */}
           <Link
             href="https://www.amazon.ae/SCALA2-Smart-Water-Pump-Villas-Grundfos/dp/B089T47194/ref=sr_1_2?crid=2J4KTASRR8AEP&dib=eyJ2IjoiMSJ9.sA4Qstv6E2qPDccCtmmaaTFFY8yJ2eWCDBiMTX5HFMrr47L3axk9q-cLSM93iUXkGKEHrEbvoXOuPETNPqkUdWQJX4FpmDzE46msC1Pm5vwVs2pj0wf7h5gDOWjRmPrcHThkld21z5ilCaJ36qlXShTMIdoAToLp0YB_-Vv0TP4TQKkdFEegMx7tA-JG1ktqmv4dtOwHI2KE8TojxUbVhyteToI6nYIm68XTtAYYl-8.4SnQZ5Y-VtjTarClniFh_jBagNteWMT5B1YVb73hksU&dib_tag=se&keywords=SCALA2&qid=1779434125&sprefix=scala%2Caps%2C206&sr=8-2"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center text-white text-base font-normal leading-none tracking-normal no-underline hover:opacity-80 transition-opacity"
+            className="inline-flex border border-white items-center justify-center text-white text-base font-normal leading-none tracking-normal no-underline hover:opacity-80 transition-opacity px-6 h-11.75 py-3.25"
           >
             Get SCALA2 Now
           </Link>
