@@ -43,7 +43,7 @@ export default function HeroSection() {
           <button
             type="button"
             onClick={() => setVideoOpen(true)}
-            className="inline-flex items-center justify-center gap-2 text-white text-base font-normal leading-none tracking-normal hover:opacity-80 transition-opacity"
+            className="inline-flex items-center justify-center gap-2 text-white text-base font-normal leading-none tracking-normal hover:opacity-80 transition-opacity px-6 h-11.75 py-3.25 border border-white cursor-pointer rounded-sm"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M8 5v14l11-7z" />

@@ -11,7 +11,7 @@ const cards = [
     image: "/images/Choose-The-Home-Journey-2.png",
     tag: "Home Renovators",
     title:
-      "Water Pressure. Right From the Start or Why Water Pressure Should Never Be an Afterthought",
+      "Water Pressure Should Never Be an Afterthought",
     description: "Plan your water system before renovation starts",
     linkText: "Download the Renovation Planning Guide",
     href: "/files/Grundfos_Guide_2_Villa_Renovation_Planning_Guide.pdf",

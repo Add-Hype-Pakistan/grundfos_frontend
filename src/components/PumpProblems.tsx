@@ -3,11 +3,11 @@ const problems = [
     image: "/images/Inconsistent-Water-Pressure.jpg",
     title: "Weak Water Pressure",
     description:
-      "When multiple taps are used at the same time, water pressure can become inconsistent throughout your home.",
+      "Open more than one tap and pressure drops across your home.",
   },
   {
     image: "/images/domestic_pump.jpeg",
-    title: "Pump\nToo Noisy",
+    title: "Pump Too Noisy",
     description: "Background noise that disrupts your comfort day and night.",
   },
   {
@@ -31,28 +31,6 @@ export default function PumpProblems() {
         owners live with all three. Until they don&rsquo;t.
       </p>
 
-      <div className="mt-12 md:mt-14 lg:mt-16 grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-12 lg:gap-8 pb-16">
-        {problems.map((problem) => (
-          <div key={problem.title} className="group relative w-full">
-            <div className="overflow-hidden">
-              <img
-                src={problem.image}
-                alt={problem.title}
-                className="w-full aspect-418/506 max-h-125 lg:max-h-none object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-              />
-            </div>
-            <div className="absolute left-1/2 -translate-x-1/2 -bottom-6 lg:-bottom-16 w-72 max-w-[calc(100%-2rem)] min-h-30 lg:h-40 flex flex-col justify-between bg-black/80 rounded-sm p-4">
-              <h3 className="font-(family-name:--font-grundfos-sans-extd) font-bold text-white text-lg md:text-[21.46px] leading-normal tracking-normal whitespace-pre-line">
-                {problem.title}
-              </h3>
-              <p className="text-white text-xs md:text-[13.41px] font-normal leading-normal tracking-normal">
-                {problem.description}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
-
       <div className="mt-10 md:mt-12 flex justify-center">
         <a
           href="/files/Guide_3_Why_Pressure_Drops_V2_Option_A.pdf"
@@ -61,6 +39,31 @@ export default function PumpProblems() {
         >
           Find the Cause of Your Water Pressure Drop
         </a>
+      </div>
+
+      <div className="mt-12 md:mt-14 lg:mt-16 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+        {problems.map((problem) => (
+          <div
+            key={problem.title}
+            className="group relative w-full overflow-hidden rounded-sm"
+          >
+            <img
+              src={problem.image}
+              alt={problem.title}
+              className="w-full aspect-418/506 max-h-125 lg:max-h-none object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            />
+            {/* Gradient overlay for text legibility */}
+            <div className="absolute inset-0 bg-linear-to-t from-black/85 via-black/30 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 p-5 lg:p-6">
+              <h3 className="font-(family-name:--font-grundfos-sans-extd) font-bold text-white text-lg md:text-[21.46px] leading-normal tracking-normal whitespace-pre-line">
+                {problem.title}
+              </h3>
+              <p className="mt-2 text-white text-xs md:text-[13.41px] font-normal leading-normal tracking-normal">
+                {problem.description}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
