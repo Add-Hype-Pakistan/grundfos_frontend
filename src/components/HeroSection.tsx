@@ -25,12 +25,11 @@ export default function HeroSection() {
       {/* Content — centered below navbar */}
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-6 md:px-10 lg:px-16 pt-24 md:pt-32">
         <h1 className="text-white font-(family-name:--font-grundfos-sans-extd) font-bold text-3xl sm:text-4xl md:text-[48px] leading-tight tracking-normal max-w-4xl">
-          The Smart Water Pressure Solution for Modern UAE Villas
+          Smart, Constant Water Pressure for Modern UAE Villas
         </h1>
         <p className="mt-5 text-white text-base md:text-lg lg:text-xl font-normal leading-normal tracking-normal max-w-3xl">
-          Delivering constant pressure, whisper-quiet operation, and up to 40%
-          energy savings&mdash;so every tap, shower, and moment at home feels more
-          comfortable.
+          Constant water pressure, whisper-quiet performance, and up to 40%
+          energy savings, even when multiple taps are in use.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4 md:gap-6">
           {/* <a
@@ -48,7 +47,7 @@ export default function HeroSection() {
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M8 5v14l11-7z" />
             </svg>
-            Watch SCALA2 in Action
+            See SCALA2 in Action
           </button>
         </div>
       </div>
@@ -57,7 +56,7 @@ export default function HeroSection() {
       <VideoLightbox
         open={videoOpen}
         onClose={() => setVideoOpen(false)}
-        src="/images/Scala2_Website_video.mp4"
+        src="https://www.youtube.com/watch?v=ajBwKI9kTo0"
       />
     </section>
   );

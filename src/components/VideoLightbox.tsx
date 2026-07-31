@@ -8,6 +8,15 @@ type VideoLightboxProps = {
   src: string;
 };
 
+// Returns a YouTube embed URL if `src` is a YouTube watch/short/embed link, else null.
+function getYouTubeEmbedUrl(src: string): string | null {
+  const match = src.match(
+    /(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([\w-]{11})/
+  );
+  if (!match) return null;
+  return `https://www.youtube.com/embed/${match[1]}?autoplay=1&rel=0`;
+}
+
 export default function VideoLightbox({ open, onClose, src }: VideoLightboxProps) {
   // Close on Escape
   useEffect(() => {
@@ -20,6 +29,8 @@ export default function VideoLightbox({ open, onClose, src }: VideoLightboxProps
   }, [open, onClose]);
 
   if (!open) return null;
+
+  const youTubeEmbed = getYouTubeEmbedUrl(src);
 
   return (
     <div
@@ -47,13 +58,25 @@ export default function VideoLightbox({ open, onClose, src }: VideoLightboxProps
             <path d="M6 6l12 12M18 6L6 18" />
           </svg>
         </button>
-        <video
-          src={src}
-          className="w-full h-auto max-h-[80vh] rounded-lg bg-black"
-          controls
-          autoPlay
-          playsInline
-        />
+        {youTubeEmbed ? (
+          <div className="relative w-full aspect-video">
+            <iframe
+              src={youTubeEmbed}
+              title="SCALA2 in Action"
+              className="absolute inset-0 w-full h-full rounded-lg bg-black"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        ) : (
+          <video
+            src={src}
+            className="w-full h-auto max-h-[80vh] rounded-lg bg-black"
+            controls
+            autoPlay
+            playsInline
+          />
+        )}
       </div>
     </div>
   );
