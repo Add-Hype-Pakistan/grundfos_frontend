@@ -18,7 +18,7 @@ export default function Scala2Hero() {
       {/* Content — centered */}
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-6 md:px-10 lg:px-16 pt-24 md:pt-32">
         <h1 className="text-white font-(family-name:--font-grundfos-sans-extd) font-black text-[28px] sm:text-[36px] md:text-[48px] leading-none tracking-[0em] max-w-3xl">
-          Not all water pumps are build the same
+          Not all water pumps are built the same
         </h1>
         {/* <a
           href="/files/Grundfos_SCALA2_Technical_Brochure_1.pdf"
