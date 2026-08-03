@@ -1,31 +1,32 @@
 import Link from "next/link";
 
-const footerColumns = [
-  {
-    title: "SCALA2",
-    links: ["Help me choose", "Future Proof Homes", "New Home Owner", "Smart Home"],
-  },
-  {
-    title: "Support",
-    links: ["Support Center", "FAQ", "How to", "Contact Service"],
-  },
-  {
-    title: "Learn",
-    links: ["SCALA2 Documentation", "Case Study"],
-  },
-  {
-    title: "About us",
-    links: ["Who We Are", "Our Purpose", "Our Purpose", "What We Do", "About SCALA2"],
-  },
-  {
-    title: "Where to buy",
-    links: ["SCALA2 Locations", "Contact"],
-  },
-  {
-    title: "Quick Links",
-    links: ["Grundfos.com", "MyGrundfos"],
-  },
-];
+// Link columns hidden for now
+// const footerColumns = [
+//   {
+//     title: "SCALA2",
+//     links: ["Help me choose", "Future Proof Homes", "New Home Owner", "Smart Home"],
+//   },
+//   {
+//     title: "Support",
+//     links: ["Support Center", "FAQ", "How to", "Contact Service"],
+//   },
+//   {
+//     title: "Learn",
+//     links: ["SCALA2 Documentation", "Case Study"],
+//   },
+//   {
+//     title: "About us",
+//     links: ["Who We Are", "Our Purpose", "Our Purpose", "What We Do", "About SCALA2"],
+//   },
+//   {
+//     title: "Where to buy",
+//     links: ["SCALA2 Locations", "Contact"],
+//   },
+//   {
+//     title: "Quick Links",
+//     links: ["Grundfos.com", "MyGrundfos"],
+//   },
+// ];
 
 const bottomLinks = [
   "Legal",
@@ -47,10 +48,9 @@ export default function Footer() {
         </h2>
       </div>
 
-      {/* Divider */}
+      {/* Link Columns hidden for now
       <div className="border-t border-[#D9D9D9]" />
 
-      {/* Link Columns */}
       <div className="py-8 md:py-10 lg:py-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
         {footerColumns.map((col) => (
           <div key={col.title}>
@@ -70,6 +70,7 @@ export default function Footer() {
           </div>
         ))}
       </div>
+      */}
 
       {/* Divider */}
       <div className="border-t border-[#D9D9D9]" />
