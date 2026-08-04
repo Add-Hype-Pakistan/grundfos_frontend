@@ -1,11 +1,31 @@
+"use client";
+
+import { useRef, useState } from "react";
 import Link from "next/link";
 
 export default function WarrantySection() {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [muted, setMuted] = useState(true);
+
+  const toggleMuted = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    const next = !video.muted;
+    video.muted = next;
+    if (!next) {
+      // Unmuting: make sure it's audible and playing
+      video.volume = 1;
+      video.play().catch(() => {});
+    }
+    setMuted(next);
+  };
+
   return (
     <section className="relative w-full h-120 sm:h-140 md:h-194.5 overflow-hidden bg-[#11497B]">
       {/* Background Video */}
       <div className="absolute inset-0">
         <video
+          ref={videoRef}
           autoPlay
           muted
           loop
@@ -18,6 +38,25 @@ export default function WarrantySection() {
         </video>
         <div className="absolute inset-0 bg-black/30" />
       </div>
+
+      {/* Mute / Unmute toggle */}
+      <button
+        type="button"
+        onClick={toggleMuted}
+        aria-label={muted ? "Unmute video" : "Mute video"}
+        aria-pressed={!muted}
+        className="absolute top-4 right-4 md:top-6 md:right-6 z-20 flex items-center justify-center w-11 h-11 rounded-full bg-black/40 text-white border border-white/40 backdrop-blur-sm hover:bg-black/60 transition-colors cursor-pointer"
+      >
+        {muted ? (
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 9v6h4l5 5V4L7 9H3zm13.59 3l2.7-2.7-1.41-1.41-2.7 2.7-2.7-2.7-1.41 1.41 2.7 2.7-2.7 2.7 1.41 1.41 2.7-2.7 2.7 2.7 1.41-1.41-2.7-2.7z" />
+          </svg>
+        ) : (
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05A4.5 4.5 0 0016.5 12zM14 3.23v2.06a7 7 0 010 13.42v2.06a9 9 0 000-17.54z" />
+          </svg>
+        )}
+      </button>
 
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-end h-full px-6 pb-16 md:px-10 md:pb-24 lg:px-16 lg:pb-35.75">
