@@ -15,7 +15,7 @@ const cards = [
   },
   {
     image: "/images/Choose-The-Home-Journey-3.png",
-    tag: "Smart Home Enthusiasts",
+    tag: "Smart Home Upgrade",
     title: "Smart pressure boosting that adapts instantly to your home's water demand.",
     linkText: "Download the Smart Home Upgrade Guide",
     href: "/files/Grundfos_Guide_3_Smart_Home_Upgrade_Guide.pdf",
@@ -26,7 +26,7 @@ export default function ChooseHomeJourney() {
   return (
     <section className="w-full bg-white p-10 md:p-12 lg:p-16.25">
       <h2 className="font-(family-name:--font-grundfos-sans-extd) font-bold text-[#092844] text-center text-3xl md:text-4xl lg:text-5xl leading-none tracking-normal mb-4 md:mb-5">
-        Better Home Comfort Starts with the Right Water System
+        Better home comfort starts with the right water system
       </h2>
       <p className="text-center text-[#092844] text-base md:text-lg lg:text-xl font-normal leading-normal tracking-normal max-w-3xl mx-auto mb-10 md:mb-12 lg:mb-16">
         Whether you are moving into a new villa, renovating, or upgrading to a

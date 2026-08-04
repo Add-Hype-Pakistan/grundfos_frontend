@@ -87,7 +87,7 @@ export default function Scala2PumpComparison() {
     <section className="w-full bg-white px-6 py-16 md:px-10 md:py-20 lg:px-16 lg:py-24">
       {/* Heading */}
       <h2 className="font-(family-name:--font-grundfos-sans-extd) font-bold text-[#092844] text-center text-2xl md:text-3xl lg:text-[48px] leading-normal tracking-normal">
-        See the Difference in Everyday Home Use
+        See the difference in everyday home use
       </h2>
       <p className="mt-4 text-center text-[#092844] text-base md:text-lg lg:text-[24px] font-semibold leading-normal tracking-normal max-w-3xl mx-auto">
         Traditional pumps operate at a fixed speed. SCALA2 adapts to real-time
