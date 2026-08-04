@@ -25,7 +25,7 @@ export default function HeroSection() {
       {/* Content — centered below navbar */}
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-6 md:px-10 lg:px-16 pt-24 md:pt-32">
         <h1 className="text-white font-(family-name:--font-grundfos-sans-extd) font-bold text-3xl sm:text-4xl md:text-[48px] leading-tight tracking-normal max-w-4xl">
-          Smart, Constant Water Pressure for Modern UAE Villas
+          Smart, constant water pressure for modern UAE villas
         </h1>
         <p className="mt-5 text-white text-base md:text-lg lg:text-xl font-normal leading-normal tracking-normal max-w-3xl">
           Constant water pressure, whisper-quiet performance, and up to 40%

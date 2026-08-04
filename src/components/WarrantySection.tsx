@@ -68,7 +68,7 @@ export default function WarrantySection() {
           Homeowners
         </p>
         <Link
-          href="https://www.amazon.ae/SCALA2-Smart-Water-Pump-Villas-Grundfos/dp/B089T47194/ref=sr_1_2?crid=2J4KTASRR8AEP&dib=eyJ2IjoiMSJ9.sA4Qstv6E2qPDccCtmmaaTFFY8yJ2eWCDBiMTX5HFMrr47L3axk9q-cLSM93iUXkGKEHrEbvoXOuPETNPqkUdWQJX4FpmDzE46msC1Pm5vwVs2pj0wf7h5gDOWjRmPrcHThkld21z5ilCaJ36qlXShTMIdoAToLp0YB_-Vv0TP4TQKkdFEegMx7tA-JG1ktqmv4dtOwHI2KE8TojxUbVhyteToI6nYIm68XTtAYYl-8.4SnQZ5Y-VtjTarClniFh_jBagNteWMT5B1YVb73hksU&dib_tag=se&keywords=SCALA2&qid=1779434125&sprefix=scala%2Caps%2C206&sr=8-2"
+          href="https://www.amazon.ae/Grundfos-SCALA2-Water-Booster-93013322/dp/B08MBTNLGK/ref=pd_sbs_d_sccl_2_1/257-8815241-3123604?pd_rd_w=GXS6z&content-id=amzn1.sym.89a2354c-2e54-4295-a00e-33a1227533af&pf_rd_p=89a2354c-2e54-4295-a00e-33a1227533af&pf_rd_r=E90VKS2P44JYVCNE4F8C&pd_rd_wg=ctZF3&pd_rd_r=d4b29169-9332-4a9c-9133-82894dd3f72c&pd_rd_i=B08MBTNLGK&psc=1"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2.5 w-46 h-11.75 py-3.25 border border-white text-white text-base font-normal leading-none tracking-normal rounded-sm no-underline hover:bg-white hover:text-[#11497B] transition-colors"

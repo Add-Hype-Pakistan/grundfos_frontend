@@ -23,10 +23,10 @@ export default function PumpProblems() {
   return (
     <section className="w-full bg-white px-10 py-16 md:px-12 md:py-20 lg:px-16.25 lg:py-28.5">
       <h2 className="font-(family-name:--font-grundfos-sans-extd) font-bold text-[#092844] text-center text-2xl md:text-3xl lg:text-[33.47px] leading-normal tracking-normal max-w-4xl lg:max-w-none lg:whitespace-nowrap mx-auto">
-        Most Homeowners Replace Their Pump for the Same 3 Reasons
+        Most homeowners upgrade their pump for the same 3 reasons
       </h2>
       <p className="mt-5 text-center text-[#092844] text-base md:text-lg lg:text-[20.92px] font-normal leading-normal tracking-normal max-w-3xl mx-auto">
-        Replace inconsistent water pressure, noisy operation, and high energy
+        Upgrade inconsistent water pressure, noisy operation, and high energy
         consumption with smart boosting designed for modern homes.
       </p>
 
