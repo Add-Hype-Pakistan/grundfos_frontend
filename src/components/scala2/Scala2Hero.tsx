@@ -20,13 +20,13 @@ export default function Scala2Hero() {
         <h1 className="text-white font-(family-name:--font-grundfos-sans-extd) font-black text-[28px] sm:text-[36px] md:text-[48px] leading-none tracking-[0em] max-w-3xl">
           Not all water pumps are built the same
         </h1>
-        {/* <a
-          href="/files/Grundfos_SCALA2_Technical_Brochure_1.pdf"
+        <a
+          href="/files/Grundfos_SCALA2_vs_Traditional_Pump_Option_B.pdf"
           download
-          className="mt-7 inline-flex items-center justify-center px-6 h-11.75 py-3.25 border border-white text-white text-base font-normal leading-none tracking-normal rounded-sm no-underline hover:bg-white hover:text-[#11497B] transition-colors"
+          className="mt-7 inline-flex items-center justify-center gap-[7.72px] px-5 py-2.5 h-11.75 bg-[#126AF3] text-white text-sm md:text-base font-normal leading-none tracking-normal rounded-[3.09px] no-underline hover:bg-[#0d5acc] transition-colors"
         >
-          Discover Your Solution
-        </a> */}
+          Compare SCALA2 with a Traditional Pump
+        </a>
       </div>
     </section>
   );

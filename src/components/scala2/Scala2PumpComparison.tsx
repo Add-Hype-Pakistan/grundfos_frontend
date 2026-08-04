@@ -180,17 +180,6 @@ export default function Scala2PumpComparison() {
             </span>
           </div>
         </div>
-
-        {/* Download button — own row below captions */}
-        <div className="mt-6 flex justify-center">
-          <a
-            href="/files/Grundfos_SCALA2_vs_Traditional_Pump_Option_B.pdf"
-            download
-            className="inline-flex items-center justify-center gap-[7.72px] px-5 py-2.5 h-11.75 bg-[#126AF3] text-white text-xs md:text-sm font-normal leading-normal rounded-[3.09px] no-underline hover:bg-[#0d5acc] transition-colors"
-          >
-            Compare SCALA2 with a Traditional Pump
-          </a>
-        </div>
       </div>
     </section>
   );
