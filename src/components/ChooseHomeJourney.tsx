@@ -45,7 +45,7 @@ export default function ChooseHomeJourney() {
                 {card.tag}
               </h3>
             </div>
-            <h4 className="mt-5 font-normal text-[#092844] text-lg md:text-xl lg:text-2xl leading-normal tracking-normal">
+            <h4 className="mt-5 grow font-normal text-[#092844] text-lg md:text-xl lg:text-2xl leading-normal tracking-normal">
               {card.title}
             </h4>
             <a

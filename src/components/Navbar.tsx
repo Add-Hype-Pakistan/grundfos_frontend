@@ -92,7 +92,7 @@ export default function Navbar() {
               Talk to an Expert
             </Link>
             <Link
-              href="tel:+97148815166"
+              href="/find-a-dealer"
               className="text-base text-gray-800 no-underline"
               onClick={() => setDrawerOpen(false)}
             >
