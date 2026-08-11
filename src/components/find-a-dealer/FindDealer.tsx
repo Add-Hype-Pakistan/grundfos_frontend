@@ -72,14 +72,18 @@ export default function FindDealer() {
         d.address.toLowerCase().includes(q);
       return matchesFilter && matchesQuery;
     });
-    if (userLoc) {
-      return [...filtered].sort(
-        (a, b) =>
+    // Showrooms are pinned to the top; within each group sort by distance if known.
+    const rank = (d: Dealer) => (d.type === "Showroom" ? 0 : 1);
+    return [...filtered].sort((a, b) => {
+      if (rank(a) !== rank(b)) return rank(a) - rank(b);
+      if (userLoc) {
+        return (
           distanceKm(userLoc, { lat: a.lat, lng: a.lng }) -
           distanceKm(userLoc, { lat: b.lat, lng: b.lng })
-      );
-    }
-    return filtered;
+        );
+      }
+      return 0;
+    });
   }, [query, filter, userLoc]);
 
   // When we get the user's location, select the nearest dealer.
@@ -182,8 +186,14 @@ export default function FindDealer() {
                 <p className="mt-1 text-[#4a5b6b] text-xs leading-snug">
                   {d.address}
                 </p>
-                <span className="mt-3 inline-block text-[#126AF3] text-[11px] font-medium border border-[#126AF3] rounded px-2 py-0.5">
-                  Official {d.type}
+                <span
+                  className={`mt-3 inline-block text-[11px] font-medium border rounded px-2 py-0.5 ${
+                    d.type === "Showroom"
+                      ? "text-[#126AF3] border-[#126AF3]"
+                      : "text-[#4a5b6b] border-gray-300"
+                  }`}
+                >
+                  {d.type === "Showroom" ? "Official Showroom" : "Authorized Dealer"}
                 </span>
               </button>
             );

@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import ReadyToBuy from "@/components/ReadyToBuy";
 import Scala2Hero from "@/components/scala2/Scala2Hero";
 import Scala2PumpComparison from "@/components/scala2/Scala2PumpComparison";
+import Scala2NineReasons from "@/components/scala2/Scala2NineReasons";
 import Scala2Comparison from "@/components/scala2/Scala2Comparison";
 import Scala2SoundLevels from "@/components/scala2/Scala2SoundLevels";
 import Scala2EnergyEfficient from "@/components/scala2/Scala2EnergyEfficient";
@@ -25,6 +26,7 @@ export default function Scala2Page() {
       <main>
         <Scala2Hero />
         <Scala2PumpComparison />
+        <Scala2NineReasons />
         <WarrantySection/>
         <Scala2Testimonial />
         <ReadyToBuy />
