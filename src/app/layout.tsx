@@ -47,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${grundfosSans.variable} ${grundfosSansExtd.variable}`}>
+    <html lang="en" className={`${grundfosSans.variable} ${grundfosSansExtd.variable} scroll-smooth`}>
       <body className="min-h-screen flex flex-col antialiased">
         <AntdRegistry>{children}</AntdRegistry>
       </body>

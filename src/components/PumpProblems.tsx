@@ -25,20 +25,6 @@ export default function PumpProblems() {
       <h2 className="font-(family-name:--font-grundfos-sans-extd) font-bold text-[#092844] text-center text-2xl md:text-3xl lg:text-[33.47px] leading-normal tracking-normal max-w-4xl lg:max-w-none lg:whitespace-nowrap mx-auto">
         Most homeowners upgrade their pump for the same 3 reasons
       </h2>
-      <p className="mt-5 text-center text-[#092844] text-base md:text-lg lg:text-[20.92px] font-normal leading-normal tracking-normal max-w-3xl mx-auto">
-        Upgrade inconsistent water pressure, noisy operation, and high energy
-        consumption with smart boosting designed for modern homes.
-      </p>
-
-      <div className="mt-10 md:mt-12 flex justify-center">
-        <a
-          href="/files/Guide_3_Why_Pressure_Drops_V2_Option_A.pdf"
-          download
-          className="inline-flex items-center justify-center gap-[8.75px] h-11.75 py-3.25 px-6 bg-[#126AF3] text-white text-base font-normal leading-normal tracking-normal rounded-[3.5px] no-underline hover:bg-[#0d5acc] transition-colors"
-        >
-          Diagnose Your Water Pressure Drop
-        </a>
-      </div>
 
       <div className="mt-12 md:mt-14 lg:mt-16 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
         {problems.map((problem) => (
@@ -63,6 +49,16 @@ export default function PumpProblems() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="mt-12 md:mt-14 lg:mt-16 flex justify-center">
+        <a
+          href="/files/Guide_3_Why_Pressure_Drops_V2_Option_A.pdf"
+          download
+          className="inline-flex items-center justify-center gap-[8.75px] h-11.75 py-3.25 px-6 bg-[#126AF3] text-white text-base font-normal leading-normal tracking-normal rounded-[3.5px] no-underline hover:bg-[#0d5acc] transition-colors"
+        >
+          Diagnose Your Water Pressure Drop
+        </a>
       </div>
     </section>
   );

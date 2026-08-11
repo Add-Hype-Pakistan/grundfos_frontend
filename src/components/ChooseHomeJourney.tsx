@@ -1,21 +1,21 @@
 const cards = [
   {
     image: "/images/Choose-The-Home-Journey-1.png",
-    tag: "New Villa Owners",
+    tag: "New villa owners",
     title: "Check the essentials before you move in and avoid pressure problems later.",
     linkText: "Download the Move-In Checklist",
     href: "/files/Grundfos_Guide_1_New_Villa_Move_In_Checklist.pdf",
   },
   {
     image: "/images/Choose-The-Home-Journey-2.png",
-    tag: "Home Renovators",
+    tag: "Home renovation",
     title: "Plan the water system before the finishes go in.",
     linkText: "Download the Renovation Planning Guide",
     href: "/files/Grundfos_Guide_2_Villa_Renovation_Planning_Guide.pdf",
   },
   {
     image: "/images/Choose-The-Home-Journey-3.png",
-    tag: "Smart Home Upgrade",
+    tag: "Smart home upgrade",
     title: "Smart pressure boosting that adapts instantly to your home's water demand.",
     linkText: "Download the Smart Home Upgrade Guide",
     href: "/files/Grundfos_Guide_3_Smart_Home_Upgrade_Guide.pdf",

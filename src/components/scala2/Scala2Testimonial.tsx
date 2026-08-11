@@ -21,13 +21,9 @@ export default function Scala2Testimonial() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center h-full min-h-125 md:min-h-150 lg:min-h-163 px-6 py-16 md:px-10 md:py-20 lg:px-16 lg:py-24">
         <blockquote className="text-white text-xl md:text-2xl lg:text-[32px] font-normal leading-snug tracking-normal max-w-4xl">
-          Infact we have completely forgotten that we have a pump at all which I
-          think is the biggest statement of all. It&rsquo;s so nice to be able to
-          just open the tap, and the water comes out as if it were on mains
-          pressure. Whereas before you&rsquo;d open the tap, wait a few seconds
-          for the burst, then adjust the tap and so on. Also we can now have
-          multiple showers running at the same time, or have a shower whilst the
-          gardener is watering etc, which was always problematic before as the
+          It&rsquo;s so nice to be able to just open the tap, and the water comes
+          out as if it were on mains pressure. We can now have multiple showers
+          running at the same time, which was always problematic before as the
           pressure would fluctuate a lot.
         </blockquote>
 

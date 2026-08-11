@@ -21,8 +21,7 @@ export default function Scala2Hero() {
           Not all water pumps are built the same
         </h1>
         <a
-          href="/files/Grundfos_SCALA2_vs_Traditional_Pump_Option_B.pdf"
-          download
+          href="#nine-reasons"
           className="mt-7 inline-flex items-center justify-center gap-[7.72px] px-5 py-2.5 h-11.75 bg-[#126AF3] text-white text-sm md:text-base font-normal leading-none tracking-normal rounded-[3.09px] no-underline hover:bg-[#0d5acc] transition-colors"
         >
           Compare SCALA2 with a Traditional Pump

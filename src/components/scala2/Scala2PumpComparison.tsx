@@ -8,7 +8,7 @@ const tabs = [
     label: "Water Pressure",
     heading: "Constant Pressure",
     traditional: {
-      image: "/images/water-pressure-left.jpeg",
+      image: "/images/Low_consumption_updated.mp4",
       caption: "Traditional pump: Pressure drops as more taps open.",
     },
     scala2: {
@@ -121,6 +121,18 @@ export default function Scala2PumpComparison() {
           {tab.heading}
         </h3>
 
+        {/* Captions (above each media) */}
+        <div className="mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-center">
+            <span className="justify-self-center text-center inline-block bg-[#F5F6F8] text-black text-sm md:text-base font-normal leading-normal px-3 py-1.5 rounded">
+              {tab.traditional.caption}
+            </span>
+            <span className="justify-self-center text-center inline-block bg-[#F5F6F8] text-black text-sm md:text-base font-normal leading-normal px-3 py-1.5 rounded">
+              {tab.scala2.caption}
+            </span>
+          </div>
+        </div>
+
         {/* Image / video panels */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           {[tab.traditional, tab.scala2].map((panel) => (
@@ -167,18 +179,6 @@ export default function Scala2PumpComparison() {
               )}
             </div>
           ))}
-        </div>
-
-        {/* Captions (centered under each media) */}
-        <div className="mt-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-center">
-            <span className="justify-self-center text-center inline-block bg-[#F5F6F8] text-black text-sm md:text-base font-normal leading-normal px-3 py-1.5 rounded">
-              {tab.traditional.caption}
-            </span>
-            <span className="justify-self-center text-center inline-block bg-[#F5F6F8] text-black text-sm md:text-base font-normal leading-normal px-3 py-1.5 rounded">
-              {tab.scala2.caption}
-            </span>
-          </div>
         </div>
       </div>
     </section>
