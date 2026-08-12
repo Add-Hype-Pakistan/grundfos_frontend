@@ -49,6 +49,10 @@ export default function WarrantySection({ videos }: WarrantySectionProps) {
     if (isCarousel) setCurrent((c) => (c + 1) % sources.length);
   };
 
+  const goPrev = () =>
+    setCurrent((c) => (c - 1 + sources.length) % sources.length);
+  const goNext = () => setCurrent((c) => (c + 1) % sources.length);
+
   return (
     <section className="relative w-full h-120 sm:h-140 md:h-194.5 overflow-hidden bg-[#11497B]">
       {/* Background Video(s) */}
@@ -94,6 +98,32 @@ export default function WarrantySection({ videos }: WarrantySectionProps) {
           </svg>
         )}
       </button>
+
+      {/* Carousel arrows */}
+      {isCarousel && (
+        <>
+          <button
+            type="button"
+            onClick={goPrev}
+            aria-label="Previous video"
+            className="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-11 h-11 md:w-12 md:h-12 rounded-full bg-black/30 text-white border border-white/40 backdrop-blur-sm hover:bg-black/55 transition-colors cursor-pointer"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </button>
+          <button
+            type="button"
+            onClick={goNext}
+            aria-label="Next video"
+            className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-11 h-11 md:w-12 md:h-12 rounded-full bg-black/30 text-white border border-white/40 backdrop-blur-sm hover:bg-black/55 transition-colors cursor-pointer"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </button>
+        </>
+      )}
 
       {/* Slide indicators (only for carousel) */}
       {isCarousel && (
