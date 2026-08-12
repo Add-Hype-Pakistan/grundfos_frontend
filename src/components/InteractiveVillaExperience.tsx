@@ -102,6 +102,23 @@ export default function InteractiveVillaExperience() {
             </div>
           ))}
         </div>
+
+        {/* Mobile / tablet: static list of the points (hover isn't available on touch) */}
+        <div className="xl:hidden w-full max-w-[800px] mt-10 grid grid-cols-1 sm:grid-cols-3 gap-5">
+          {labels.map((label) => (
+            <div
+              key={label.id}
+              className="rounded-xl bg-white/10 border border-white/20 backdrop-blur-sm p-4 text-center sm:text-left"
+            >
+              <h3 className="text-white font-bold text-base leading-tight">
+                {label.title}
+              </h3>
+              <p className="mt-1 text-white/90 text-sm leading-snug">
+                {label.description}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

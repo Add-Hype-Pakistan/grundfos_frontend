@@ -1,41 +1,78 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
-export default function WarrantySection() {
-  const videoRef = useRef<HTMLVideoElement | null>(null);
+const DEFAULT_VIDEO = "/images/2-year-warranty.mp4";
+
+type WarrantySectionProps = {
+  /** One or more background videos. Multiple videos crossfade as a carousel. */
+  videos?: string[];
+};
+
+export default function WarrantySection({ videos }: WarrantySectionProps) {
+  const sources = videos && videos.length > 0 ? videos : [DEFAULT_VIDEO];
+  const isCarousel = sources.length > 1;
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+  const [current, setCurrent] = useState(0);
   const [muted, setMuted] = useState(true);
 
+  // Play the active video from the start; pause the others.
+  useEffect(() => {
+    sources.forEach((_, i) => {
+      const v = videoRefs.current[i];
+      if (!v) return;
+      if (i === current) {
+        v.currentTime = 0;
+        v.muted = muted;
+        v.play().catch(() => {});
+      } else {
+        v.pause();
+      }
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [current]);
+
   const toggleMuted = () => {
-    const video = videoRef.current;
-    if (!video) return;
-    const next = !video.muted;
-    video.muted = next;
+    const v = videoRefs.current[current];
+    if (!v) return;
+    const next = !v.muted;
+    v.muted = next;
     if (!next) {
-      // Unmuting: make sure it's audible and playing
-      video.volume = 1;
-      video.play().catch(() => {});
+      v.volume = 1;
+      v.play().catch(() => {});
     }
     setMuted(next);
   };
 
+  const handleEnded = () => {
+    if (isCarousel) setCurrent((c) => (c + 1) % sources.length);
+  };
+
   return (
     <section className="relative w-full h-120 sm:h-140 md:h-194.5 overflow-hidden bg-[#11497B]">
-      {/* Background Video */}
+      {/* Background Video(s) */}
       <div className="absolute inset-0">
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          poster="/images/2%20year%20warranty.png"
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/images/2-year-warranty.mp4" type="video/mp4" />
-        </video>
+        {sources.map((src, i) => (
+          <video
+            key={src}
+            ref={(el) => {
+              videoRefs.current[i] = el;
+            }}
+            autoPlay={i === 0}
+            muted
+            loop={!isCarousel}
+            playsInline
+            preload="auto"
+            poster="/images/2%20year%20warranty.png"
+            onEnded={handleEnded}
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+              i === current ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <source src={src} type="video/mp4" />
+          </video>
+        ))}
         <div className="absolute inset-0 bg-black/30" />
       </div>
 
@@ -57,6 +94,23 @@ export default function WarrantySection() {
           </svg>
         )}
       </button>
+
+      {/* Slide indicators (only for carousel) */}
+      {isCarousel && (
+        <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 z-20 flex items-center gap-2">
+          {sources.map((src, i) => (
+            <button
+              key={src}
+              type="button"
+              onClick={() => setCurrent(i)}
+              aria-label={`Show video ${i + 1}`}
+              className={`h-2 rounded-full transition-all ${
+                i === current ? "w-6 bg-white" : "w-2 bg-white/50 hover:bg-white/80"
+              }`}
+            />
+          ))}
+        </div>
+      )}
 
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-end h-full px-6 pb-16 md:px-10 md:pb-24 lg:px-16 lg:pb-35.75">
