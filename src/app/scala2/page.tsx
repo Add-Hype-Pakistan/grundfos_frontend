@@ -27,7 +27,13 @@ export default function Scala2Page() {
         <Scala2Hero />
         <Scala2PumpComparison />
         <Scala2NineReasons />
-        <WarrantySection/>
+        <WarrantySection
+          videos={[
+            "/images/video_1.mp4",
+            "/images/video_2.mp4",
+            "/images/video_3.mp4",
+          ]}
+        />
         <Scala2Testimonial />
         <ReadyToBuy />
       </main>
