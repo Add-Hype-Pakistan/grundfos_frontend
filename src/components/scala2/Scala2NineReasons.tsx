@@ -184,7 +184,7 @@ export default function Scala2NineReasons() {
         Transform your water system: 9 reasons to choose a smart pump
       </h2>
       <p className="text-white/80 text-base md:text-lg font-normal leading-snug tracking-normal max-w-2xl mb-12 md:mb-16">
-        Behind your taps has not changed in decades. Here is what
+        Here is what
         changes when it does.
       </p>
 
