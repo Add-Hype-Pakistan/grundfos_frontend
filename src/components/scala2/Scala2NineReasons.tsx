@@ -177,14 +177,14 @@ export default function Scala2NineReasons() {
       className="w-full scroll-mt-24 bg-[#092844] px-6 py-16 md:px-10 md:py-20 lg:px-16 lg:py-24"
     >
       {/* Header */}
-      <p className="text-[#E0A96D] text-sm md:text-base font-normal leading-none tracking-normal mb-3">
+      {/* <p className="text-[#E0A96D] text-sm md:text-base font-normal leading-none tracking-normal mb-3">
         Time to retire the old pump
-      </p>
+      </p> */}
       <h2 className="font-(family-name:--font-grundfos-sans-extd) font-bold text-white text-2xl md:text-3xl lg:text-[40px] leading-tight tracking-normal mb-4">
-        Nine reasons the upgrade wins
+        Transform your water system: 9 reasons to choose a smart pump
       </h2>
       <p className="text-white/80 text-base md:text-lg font-normal leading-snug tracking-normal max-w-2xl mb-12 md:mb-16">
-        The pump behind your taps has not changed in decades. Here is what
+        Behind your taps has not changed in decades. Here is what
         changes when it does.
       </p>
 
@@ -210,22 +210,14 @@ export default function Scala2NineReasons() {
       </div>
 
       {/* CTA banner */}
-      <div className="mt-12 md:mt-16 rounded-xl bg-[#126AF3] px-6 py-6 md:px-10 md:py-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
-        <div>
-          <h3 className="font-(family-name:--font-grundfos-sans-extd) font-bold text-white text-2xl md:text-3xl leading-tight">
-            Make the switch
-          </h3>
-          <p className="text-white/90 text-sm md:text-base mt-1">
-            Upgrade to intelligent water pressure.
-          </p>
-        </div>
+      <div className="mt-12 md:mt-16 rounded-xl bg-[#126AF3] px-6 py-6 md:px-10 md:py-8 flex items-center justify-center">
         <a
           href="https://www.amazon.ae/Grundfos-SCALA2-Water-Booster-93013322/dp/B08MBTNLGK/ref=pd_sbs_d_sccl_2_1/257-8815241-3123604?pd_rd_w=GXS6z&content-id=amzn1.sym.89a2354c-2e54-4295-a00e-33a1227533af&pf_rd_p=89a2354c-2e54-4295-a00e-33a1227533af&pf_rd_r=E90VKS2P44JYVCNE4F8C&pd_rd_wg=ctZF3&pd_rd_r=d4b29169-9332-4a9c-9133-82894dd3f72c&pd_rd_i=B08MBTNLGK&psc=1"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center bg-white text-[#126AF3] font-bold text-sm md:text-base uppercase tracking-wide px-8 h-13 rounded-full no-underline hover:bg-gray-100 transition-colors whitespace-nowrap"
+          className="inline-flex items-center justify-center bg-white text-[#126AF3] font-bold text-sm md:text-base uppercase tracking-wide px-8 h-13 rounded-full no-underline hover:bg-gray-100 transition-colors text-center"
         >
-          Upgrade your water system
+          Upgrade to smart water pressure
         </a>
       </div>
     </section>
