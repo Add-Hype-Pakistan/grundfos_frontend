@@ -8,11 +8,13 @@ const tabs = [
     label: "Water Pressure",
     heading: "Constant Pressure",
     traditional: {
-      image: "/images/Low_consumption_updated.mp4",
+      // image: "/images/Low_consumption_updated.mp4",
+      image: "/images/low pressure.mp4",
       caption: "Traditional pump: Pressure drops as more taps open.",
     },
     scala2: {
-      image: "/images/water-pressure-right.mp4",
+      // image: "/images/water-pressure-right.mp4",
+      image: "/images/High pressure.mp4",
       caption:
         "SCALA2: Automatically adjusts to maintain steady pressure across up to 8 taps.",
     },
