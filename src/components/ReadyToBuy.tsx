@@ -28,12 +28,12 @@ export default function ReadyToBuy() {
           Your comfort is our priority. That is why every SCALA2 comes with a 2-year warranty, giving you total peace of mind from day one.
         </p>
         <div className="flex flex-wrap items-center gap-4 md:gap-6">
-          {/* <Link
+          <Link
             href="/find-a-dealer"
             className="inline-flex items-center justify-center px-6 h-11.75 py-3.25 bg-white text-[#126AF3] text-base font-normal leading-none tracking-normal rounded-sm no-underline hover:bg-gray-100 transition-colors"
           >
             Find a dealer near you
-          </Link> */}
+          </Link>
           <button
             type="button"
             onClick={() => setFormOpen(true)}
