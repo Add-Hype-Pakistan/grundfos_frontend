@@ -9,7 +9,7 @@ import { useState } from "react";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Why SCALA2", href: "/scala2" },
-  { label: "Customer Support", href: "/customer-support" },
+  // { label: "Customer Support", href: "/customer-support" },
 ];
 
 export default function Navbar() {
@@ -35,20 +35,20 @@ export default function Navbar() {
         </Link>
 
         {/* Right side links - desktop */}
-        <div className="hidden md:flex items-center gap-6 lg:gap-10">
+        {/* <div className="hidden md:flex items-center gap-6 lg:gap-10">
           <Link
             href="/customer-support#installation-support"
             className="no-underline text-white text-sm lg:text-[17px] font-normal"
           >
             Talk to an Expert
           </Link>
-          {/* <Link
+          <Link
             href="tel:+97148815166"
             className="no-underline text-white text-sm lg:text-[17px] font-normal"
           >
             Find a Dealer
-          </Link> */}
-        </div>
+          </Link>
+        </div> */}
 
         {/* Mobile menu button */}
         <button
@@ -83,7 +83,7 @@ export default function Navbar() {
         open={drawerOpen}
       >
         <div className="flex flex-col gap-4">
-          <div className="flex flex-col gap-3 pb-4 border-b border-gray-200">
+          {/* <div className="flex flex-col gap-3 pb-4 border-b border-gray-200">
             <Link
               href="tel:+97148815166"
               className="text-base text-gray-800 no-underline"
@@ -98,7 +98,7 @@ export default function Navbar() {
             >
               Find a Dealer
             </Link>
-          </div>
+          </div> */}
           {navLinks.map((link) => (
             <Link
               key={link.label}
