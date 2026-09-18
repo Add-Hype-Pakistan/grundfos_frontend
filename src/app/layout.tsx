@@ -39,6 +39,11 @@ export const metadata: Metadata = {
   title: "Grundfos - Possibility in every drop",
   description:
     "Grundfos is a global leader in advanced pump solutions and water technology.",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
