@@ -34,13 +34,13 @@ export default function ReadyToBuy() {
           >
             Find a dealer near you
           </Link>
-          <button
+          {/* <button
             type="button"
             onClick={() => setFormOpen(true)}
             className="inline-flex items-center justify-center text-white text-base font-normal leading-none tracking-normal hover:opacity-80 transition-opacity"
           >
             Book Home Consultation
-          </button>
+          </button> */}
         </div>
       </div>
 

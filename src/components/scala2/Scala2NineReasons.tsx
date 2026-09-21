@@ -158,10 +158,11 @@ function CompareCard({
   text: string;
 }) {
   return (
-    <div className="flex flex-col rounded-xl bg-[#FBF1EC] p-5 md:p-6 min-h-[150px]">
+    <div className="flex flex-col rounded-xl bg-[#FBF1EC] p-5 md:p-6 min-h-[130px]">
       <StatusBadge ok={ok} />
       <div className="mt-6">
-        <p className="font-bold text-[#092844] text-sm md:text-base mb-1">
+        {/* Label repeats per card on mobile (where columns stack); hidden on desktop — the column header covers it */}
+        <p className="lg:hidden font-bold text-[#092844] text-sm md:text-base mb-1">
           {label}
         </p>
         <p className="text-[#5b6b7b] text-xs md:text-sm leading-snug">{text}</p>
@@ -180,13 +181,24 @@ export default function Scala2NineReasons() {
       {/* <p className="text-[#E0A96D] text-sm md:text-base font-normal leading-none tracking-normal mb-3">
         Time to retire the old pump
       </p> */}
-      <h2 className="font-(family-name:--font-grundfos-sans-extd) font-bold text-white text-2xl md:text-3xl lg:text-[40px] leading-tight tracking-normal mb-4">
+      <h2 className="font-(family-name:--font-grundfos-sans-extd) font-bold text-white text-2xl md:text-3xl lg:text-[40px] leading-tight tracking-normal mb-12 md:mb-16">
         Transform your water system: 9 reasons to choose a smart pump
       </h2>
-      <p className="text-white/80 text-base md:text-lg font-normal leading-snug tracking-normal max-w-2xl mb-12 md:mb-16">
-        Here is what
-        changes when it does.
-      </p>
+
+      {/* Column headers (desktop only) */}
+      <div className="hidden lg:grid grid-cols-3 gap-6 items-center mb-6">
+        <span className="text-white/45 text-sm font-medium uppercase tracking-wider">
+          What changes
+        </span>
+        <div className="flex items-center gap-2.5">
+          <StatusBadge ok={false} />
+          <span className="text-white font-bold text-xl">Traditional Pump</span>
+        </div>
+        <div className="flex items-center gap-2.5">
+          <StatusBadge ok={true} />
+          <span className="text-white font-bold text-xl">Grundfos SCALA2</span>
+        </div>
+      </div>
 
       {/* Reason rows */}
       <div className="flex flex-col gap-8 md:gap-10">
@@ -203,8 +215,8 @@ export default function Scala2NineReasons() {
               </h3>
             </div>
 
-            <CompareCard ok={false} label="Traditional pump" text={r.traditional} />
-            <CompareCard ok={true} label="Grundfos scala 2" text={r.scala2} />
+            <CompareCard ok={false} label="Traditional Pump" text={r.traditional} />
+            <CompareCard ok={true} label="Grundfos SCALA2" text={r.scala2} />
           </div>
         ))}
       </div>
