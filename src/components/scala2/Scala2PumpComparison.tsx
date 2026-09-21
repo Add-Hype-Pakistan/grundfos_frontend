@@ -140,7 +140,7 @@ export default function Scala2PumpComparison() {
           {[tab.traditional, tab.scala2].map((panel) => (
             <div
               key={panel.caption}
-              className="relative w-full h-72 md:h-96 lg:h-117.5 overflow-hidden rounded-[10px]"
+              className="relative w-full h-72 md:h-96 lg:h-117.5 overflow-hidden rounded-[10px] bg-[#F5F6F8]"
             >
               {panel.image.endsWith(".mp4") ? (
                 <video
@@ -149,7 +149,7 @@ export default function Scala2PumpComparison() {
                   muted
                   loop
                   playsInline
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               ) : (
                 <img
